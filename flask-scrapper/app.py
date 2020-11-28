@@ -90,7 +90,7 @@ def add_data():
         message = 'Success'
     except Exception as e:
         print(e)
-        Message = 'Error!'
+        message = 'Error!'
     return jsonify({'message':message})
         
 # change this to allow the deletion of data
@@ -106,7 +106,7 @@ def delete_data():
         message = 'Success'
     except Exception as e:
         print(e)
-        Message = 'Error!'
+        message = 'Error!'
     return jsonify({'message': message})
 
 #
