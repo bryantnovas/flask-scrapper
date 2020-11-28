@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block body %}
+<div class="mui-container">
+  <h2 class="mui--text-display2">Top ten crypto data</h2>
+  <h4>this site collects data from coinranking.com on the top 10 crypto currencies</h4>
+  <p>to get access to the data click <a href="{{url_for('get_data')}}">here</a></p>
+</div>
+
+{% endblock %}
