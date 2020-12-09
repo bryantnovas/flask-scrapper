@@ -1,2 +1,9 @@
 crypto_db.db 
 __pycache__/
+.ipnyb_checkpoints
+.pyc
+.DS_Store
+.env
+.venv
+env/
+ENV/

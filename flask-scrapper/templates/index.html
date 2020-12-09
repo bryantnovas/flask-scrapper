@@ -1,10 +1,24 @@
 {% extends "base.html" %}
 
 {% block body %}
-<div class="mui-container">
-  <h2 class="mui--text-display2">Top ten crypto data</h2>
-  <h4>this site collects data from coinranking.com on the top 10 crypto currencies</h4>
-  <p>to get access to the data click <a href="{{url_for('get_data')}}">here</a></p>
+<div class="container">
+  <!-- The video -->
+  <video autoplay muted loop id="myVideo">
+    <source src="../static/bitcoin.mp4" type="video/mp4">
+  </video>
+
+  <!-- Optional: some overlay text to describe the video -->
+  <div class="content">
+    <h1>Top Ten Crypto Data</h1>
+    <p>this site collects data from coinranking.com on the top 10 crypto currencies. Updated daily!</p>
+    <!-- Use a button to pause/play the video with JavaScript -->
+    <button id="myBtn"><a href="{{url_for('get_data')}}">Access the Api</a></p>
+    </button>
+  </div>
 </div>
 
 {% endblock %}
+
+<!-- 
+<h4>this site collects data from coinranking.com on the top 10 crypto currencies</h4>
+<p>to get access to the data click <a href="{{url_for('get_data')}}">here</a></p> -->
