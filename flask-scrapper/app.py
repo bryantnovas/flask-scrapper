@@ -5,11 +5,6 @@
 
 from flask import Flask, render_template, jsonify, request
 from flask_sqlalchemy import SQLAlchemy
-from crontab import CronTab
-cron = CronTab(user='root')
-job = cron.new(command='python import_script.py')
-job.day.every(1)
-cron.write()
 
 #
 # SETUP/CONFIG
